@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.id-card {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1100px;
+  height: 600px;
+  margin: 30px auto;
+  background: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.id-info {
+  flex: 1;
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-content{
+  padding: 30px;
+}
+
+.text-content b {
+  margin-top: 0;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.text-content p {
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 0.5;
+}
+
+.social-links {
+  padding: 40px;
+  display: flex;
+  gap: 35px;
+}
+
+.social-links a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.id-image {
+  flex: 1;
+  width: 50%;
+  background: #ddd;
+}
+
+.id-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
