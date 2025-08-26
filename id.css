@@ -14,13 +14,11 @@ body {
   margin: 30px auto;
   background: #000000;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .id-info {
   flex: 1;
-  width: 50%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -62,7 +60,6 @@ body {
 
 .id-image {
   flex: 1;
-  width: 50%;
   background: #ddd;
 }
 
