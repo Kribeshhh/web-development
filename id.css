@@ -28,19 +28,18 @@ body {
 }
 
 .text-content{
+  margin-top: 0px;
   padding: 30px;
+  line-height: 0.5;
+  color: #ffffff;
 }
 
 .text-content b {
-  margin-top: 0;
   font-size: 30px;
-  color: #ffffff;
 }
 
 .text-content p {
   font-size: 30px;
-  color: #ffffff;
-  line-height: 0.5;
 }
 
 .social-links {
