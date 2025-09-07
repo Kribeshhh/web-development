@@ -1,0 +1,47 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.box {
+    width: 900px;
+    height: 500px;
+    background-color: rgb(246, 249, 250);
+    margin: 90px auto;
+    padding: 100px 70px 0px 70px;
+
+}
+
+.bbox {
+    font-size: 40px;
+    color: #0f0f0f;
+    text-align: left;
+    font-weight: 50;
+    font-family: 'Times New Roman', Times, serif;
+    
+    margin-bottom: 80px
+}
+
+.mbox {
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: right;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 70px;
+    margin-bottom: 5px;
+}
+
+.abox {
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: right;
+    font-weight: 50;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 70px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

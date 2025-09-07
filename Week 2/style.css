@@ -1,0 +1,15 @@
+#para2{
+    font-size: 30px;color:#005600;text-align: center;font-style: italic;font-weight: 1000;font-family: 'Times New Roman', Times, serif ;padding-right: 100px;padding-right: 200px;background-color: #17b8b8; border: 10px solid red;
+}
+.para{
+    font-size: 30px;color:#892e2e;text-align: justify;
+}
+.spacer{
+    background-color: #17b8b8;
+}
+#para1{
+     font-size: 30px;color:#005600;text-align: center;font-style: italic;font-weight: 1000;font-family: 'Times New Roman', Times, serif ;padding-right: 100px;padding-right: 200px; margin-bottom: 10px;background-color: #17b8b8;
+}
+
+
+

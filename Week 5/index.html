@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function sum(a, b) {
+            return a + b;
+          }
+      
+          function product(a, b) {
+            return a * b;
+          }
+      
+          function difference(a, b) {
+            return a - b;
+          }
+      
+          function division(a, b) {
+            if (b === 0) {
+              return "Error: Division by zero!";
+            }
+            return a / b;
+          }
+
+          let x = 10;
+          let y = 5;
+      
+          console.log("Sum:", sum(x, y));
+          console.log("Product:", product(x, y));
+          console.log("Difference:", difference(x, y));
+          console.log("Division:", division(x, y));
+      
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
