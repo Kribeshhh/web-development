@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- FORM SECTION (Visible at start) -->
+  <section class="form-section" id="formSection">
+    <form id="idForm">
+
+      <h2 class="form-title">Fill Your Details</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="studentId">Student ID</label>
+      <input type="text" id="studentId" placeholder="Enter Student ID" required>
+
+      <label for="concentration">Concentration</label>
+      <input type="text" id="concentration" placeholder="Enter concentration" required>
+
+      <button type="submit">Generate ID Card</button>
+    </form>
+  </section>
+
+
+  <!-- ID CARD SECTION (Hidden initially) -->
+  <section class="id-card" id="idCard" style="display: none;">
+
+    <div class="id-info">
+      <div class="text-content">
+        <p><b>Name:</b> <span id="nameOutput"></span></p>
+        <p><b>Student ID:</b> <span id="studentIdOutput"></span></p>
+        <p><b>Concentration:</b> <span id="concentrationOutput"></span></p>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="./images/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="./images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="./images/instagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="id-image">
+      <img src="./images/pic.png" alt="Profile Image">
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
