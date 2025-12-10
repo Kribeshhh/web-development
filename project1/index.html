@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the beauty, culture, and adventure of Nepal. Explore destinations, activities, and travel tips for your Nepal journey.">
+    <title>Discover Nepal - Your Gateway to Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="./image/logo.png" alt="Travel Nepal Logo" class="logo-img">                 
+                    <span class="logo-text">Travel Nepal</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li><a href="#activities" class="nav-link">Activities</a></li>
+                    <li><a href="#culture" class="nav-link">Culture</a></li>
+                    <li><a href="#tips" class="nav-link">Travel Tips</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Nepal</h1>
+            <p class="hero-subtitle">Where Mountains Meet Culture, Adventure Meets Serenity</p>
+            <button class="cta-button" onclick="document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' })">
+                Start Exploring
+            </button>
+        </div>
+        <div class="hero-image slideshow">
+            <img class="slide active" src="./image/hero1.jpeg" alt="Nepal Image 1">
+            <img class="slide" src="./image/hero2.webp" alt="Nepal Image 2">
+            <img class="slide" src="./image/hero3.jpg" alt="Nepal Image 3">
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="section-header">
+            <h2 class="section-title">Featured Destinations</h2>
+            <p class="section-subtitle">Explore the most enchanting places in Nepal</p>
+        </div>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="./image/kathmandu.jpg" alt="Kathmandu Valley" class="responsive-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Kathmandu</h3>
+                    <p class="card-description">The vibrant capital city, home to ancient temples, bustling markets, and rich cultural heritage.</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="./image/pokhara.jpg" alt="Pokhara Lakes" class="responsive-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Pokhara</h3>
+                    <p class="card-description">A serene lakeside city with stunning mountain views, perfect for relaxation and adventure sports.</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="./image/everest.jpg" alt="Mount Everest" class="responsive-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Everest Region</h3>
+                    <p class="card-description">Home to the world's highest peak, offering trekking trails and breathtaking mountain scenery.</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="./image/chitwan.jpg" alt="Chitwan National Park" class="responsive-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Chitwan</h3>
+                    <p class="card-description">A wildlife sanctuary where you can spot rhinos, tigers, and diverse bird species in their natural habitat.</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="./image/annapurna.jpg" alt="Annapurna Range" class="responsive-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Annapurna</h3>
+                    <p class="card-description">A trekker's paradise with stunning views, diverse ecosystems, and warm local hospitality.</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="./image/bhaktapur.jpg" alt="Bhaktapur Durbar Square" class="responsive-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Bhaktapur</h3>
+                    <p class="card-description">An ancient city frozen in time, featuring traditional Newari architecture and authentic local culture.</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities" id="activities">
+        <div class="section-header">
+            <h2 class="section-title">Things to Do</h2>
+            <p class="section-subtitle">Adventure awaits in every corner of Nepal</p>
+        </div>
+        <div class="activities-container">
+            <div class="activity-item">
+                <img src="./image/trekking.jpg" alt="Trekking" class="activity-image">
+                <h3 class="activity-title">Trekking</h3>
+                <p class="activity-description">Explore diverse trekking routes through the Himalayas, from easy day hikes to challenging multi-day expeditions.</p>
+            </div>
+
+            <div class="activity-item">
+                <img src="./image/yoga.jpg" alt="Yoga" class="activity-image">
+                <h3 class="activity-title">Meditation & Yoga</h3>
+                <p class="activity-description">Find inner peace through yoga and meditation in serene mountain settings and spiritual centers.</p>
+            </div>
+
+            <div class="activity-item">
+                <img src="./image/cycling.jpg" alt="Cycling" class="activity-image">
+                <h3 class="activity-title">Cycling Tours</h3>
+                <p class="activity-description">Ride through scenic valleys and mountain passes, experiencing Nepal's landscapes up close.</p>
+            </div>
+
+            <div class="activity-item">
+                <img src="./image/paragliding.jpg" alt="Paragliding" class="activity-image">
+                <h3 class="activity-title">Paragliding</h3>
+                <p class="activity-description">Soar above the mountains and valleys for an unforgettable aerial adventure and stunning views.</p>
+            </div>
+
+            <div class="activity-item">
+                <img src="./image/rafting.jpg" alt="Rafting" class="activity-image">
+                <h3 class="activity-title">Rafting & Kayaking</h3>
+                <p class="activity-description">Navigate through thrilling rapids and peaceful rivers, experiencing Nepal's water adventures.</p>
+            </div>
+
+            <div class="activity-item">
+                <img src="./image/food.jpg.webp" alt="food" class="activity-image">
+                <h3 class="activity-title">Nepali Cuisine</h3>
+                <p class="activity-description">Experience the rich flavors of Nepal through authentic local dishes, traditional recipes, and food adventures that connect you to the country’s culture and heritage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture & Heritage Section -->
+    <section class="culture" id="culture">
+        <div class="section-header">
+            <h2 class="section-title">Culture & Heritage</h2>
+            <p class="section-subtitle">Experience Nepal's rich traditions and spiritual heritage</p>
+        </div>
+        <div class="culture-content">
+            <div class="culture-text">
+                <h3 class="culture-heading">A Tapestry of Traditions</h3>
+                <p class="culture-paragraph">Nepal is a land of profound spiritual significance and ancient traditions. With a blend of Hindu and Buddhist cultures, Nepal offers visitors a unique opportunity to experience sacred temples, vibrant festivals, and warm hospitality.</p>
+                <p class="culture-paragraph">From the colorful celebrations of Dashain and Tihar to the spiritual practices at Pashupatinath Temple, every corner of Nepal tells a story of devotion and cultural pride.</p>
+                <div class="culture-highlights">
+                    <div class="highlight">
+                        <span class="highlight-number">8</span>
+                        <span class="highlight-text">UNESCO World Heritage Sites</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-number">123</span>
+                        <span class="highlight-text">Ethnic Groups</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-number">1000+</span>
+                        <span class="highlight-text">Festivals Annually</span>
+                    </div>
+                </div>
+            </div>
+            <div class="culture-image">
+                <img src="./image/culture.jpg" alt="Nepali cultural heritage" class="responsive-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section class="tips" id="tips">
+        <div class="section-header">
+            <h2 class="section-title">Travel Tips</h2>
+            <p class="section-subtitle">Essential information for your Nepal adventure</p>
+        </div>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <h3 class="tip-title">📅 Best Time to Visit</h3>
+                <p class="tip-content">October to November and February to March offer the best weather with clear skies and comfortable temperatures.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3 class="tip-title">💰 Currency & Money</h3>
+                <p class="tip-content">The Nepalese Rupee (NPR) is the official currency. ATMs are widely available in major cities. Credit cards are accepted in tourist areas.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3 class="tip-title">🛫 Getting There</h3>
+                <p class="tip-content">Tribhuvan International Airport in Kathmandu is the main entry point. Regular flights connect Nepal to major Asian cities.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3 class="tip-title">🏨 Accommodation</h3>
+                <p class="tip-content">Nepal offers a range of options from luxury hotels to budget hostels and homestays. Book in advance during peak seasons.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3 class="tip-title">🍽️ Food & Dining</h3>
+                <p class="tip-content">Try local dishes like momos, dal bhat, and gundruk. Vegetarian options are abundant. Street food is delicious but choose wisely.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3 class="tip-title">🏥 Health & Safety</h3>
+                <p class="tip-content">Altitude sickness is common in high regions. Stay hydrated, acclimatize gradually, and carry basic medications. Nepal is generally safe for tourists.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Discover Nepal?</h2>
+            <p class="cta-subtitle">Start planning your adventure today and create memories that will last a lifetime.</p>
+            <button class="cta-button-large">Plan Your Trip</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 class="footer-title">About Nepal</h4>
+                <p class="footer-text">Nepal is a country of incredible natural beauty, rich cultural heritage, and warm hospitality. Nestled in the Himalayas, it offers experiences for every traveler.</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#culture">Culture</a></li>
+                    <li><a href="#tips">Travel Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Contact</h4>
+                <p class="footer-text">Email: info@discovernepal.com</p>
+                <p class="footer-text">Phone: +977-1-4123456</p>
+                <p class="footer-text">Address: Kathmandu, Nepal</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Discover Nepal. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
