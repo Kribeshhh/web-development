@@ -69,42 +69,6 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
-// ========== BUTTON INTERACTIONS ==========
-/**
- * Adds interactive feedback to buttons
- * Provides visual and haptic feedback on button clicks
- */
-const buttons = document.querySelectorAll('.cta-button, .cta-button-large');
-
-buttons.forEach(button => {
-    button.addEventListener('click', function () {
-        // Create ripple effect
-        const ripple = document.createElement('span');
-        ripple.style.position = 'absolute';
-        ripple.style.borderRadius = '50%';
-        ripple.style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
-        ripple.style.transform = 'scale(0)';
-        ripple.style.animation = 'ripple 0.6s ease-out';
-        ripple.style.pointerEvents = 'none';
-
-        this.style.position = 'relative';
-        this.style.overflow = 'hidden';
-
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = event.clientX - rect.left - size / 2;
-        const y = event.clientY - rect.top - size / 2;
-
-        ripple.style.width = ripple.style.height = size + 'px';
-        ripple.style.left = x + 'px';
-        ripple.style.top = y + 'px';
-
-        this.appendChild(ripple);
-
-        setTimeout(() => ripple.remove(), 600);
-    });
-});
-
 // ========== ACTIVE NAV LINK HIGHLIGHTING ==========
 /**
  * Highlights the current section in the navigation
@@ -133,48 +97,6 @@ function updateActiveNavLink() {
 }
 
 window.addEventListener('scroll', updateActiveNavLink);
-
-// ========== RIPPLE ANIMATION CSS ==========
-/**
- * Dynamically inject ripple animation CSS
- * This animation is used for button click effects
- */
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes ripple {
-        to {
-            transform: scale(4);
-            opacity: 0;
-        }
-    }
-
-    .nav-link.active {
-        color: var(--primary-color);
-        font-weight: 700;
-    }
-
-    .nav-link.active::after {
-        width: 100%;
-    }
-`;
-document.head.appendChild(style);
-
-// ========== PERFORMANCE OPTIMIZATION ==========
-/**
- * Debounce function to optimize scroll and resize events
- * Prevents excessive function calls during scrolling
- */
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
 
 // ========== PAGE LOAD ANIMATION ==========
 /**
